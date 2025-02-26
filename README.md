@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Creación de una nueva aplicación Next.js
+Empecemos por crear un nuevo proyecto de Next.js. Abra su terminal y ejecute el siguiente comando:
 
-## Getting Started
+npx create-next-app@latest my-app
+Cuando se le solicite, elija:
 
-First, run the development server:
+Yes cuando se le pida que use TypeScript.
+No cuando se le pida que utilice ESLint.
+Yes cuando se le solicite que use Tailwind CSS.
+No cuando se le solicite usar el directorio.src/
+Yes cuando se te pida que uses App Router.
+No cuando se le solicite usar Turbopack.
+No cuando se le pida que personalice el alias de importación predeterminado ().@/\*
 
-```bash
+cd my-app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+La aplicación debe ejecutarse en localhost:3000. Detenga el servidor de desarrollo para instalar las dependencias necesarias con los siguientes comandos:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+npm install @upstash/redis nanoid
+npm install next-auth @auth/core @auth/upstash-redis-adapter
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+nanoid: Una biblioteca para generar identificadores únicos y seguros.
+next-auth: Solución de autenticación creada para Next.js.
+@auth/core: Paquete principal para manejar la autenticación en Auth.js.
+@upstash/redis: SDK para interactuar con Upstash Redis a través de solicitudes HTTP.
+@auth/upstash-redis-adapter: Adaptador para la integración de Auth.js con Upstash Redis.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Ahora, crea un archivo en la raíz de tu proyecto. Vas a usar los valores , and..envAUTH_SECRETUPSTASH_REDIS_REST_URLUPSTASH_REDIS_REST_TOKEN
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El archivo debe tener lo siguiente:.env
