@@ -7,6 +7,10 @@
 
 Una implementación robusta y moderna de autenticación en Next.js 15 utilizando Auth.js (anteriormente NextAuth) con almacenamiento en caché de sesiones mediante Upstash Redis.
 
+<!-- Imagen de la aplicación: -->
+
+<img src="./public/admin.png" alt="Next.js 15 Auth con Cache de Sesiones" width="100%">
+
 ## 🚀 Características
 
 - ⚡ Autenticación moderna con Next.js 15 y App Router

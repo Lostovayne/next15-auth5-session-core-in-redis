@@ -4,9 +4,9 @@ export const dynamic = "force-dynamic";
 
 export const fetchCache = "force-no-store";
 
-import { auth } from "@/app/libs/auth";
-import redis from "@/app/libs/redis";
-import { UserType } from "@/app/libs/types";
+import { auth } from "@/app/lib/auth";
+import redis from "@/app/lib/redis";
+import { UserType } from "@/app/lib/types";
 import { encode } from "@auth/core/jwt";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
