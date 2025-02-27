@@ -40,7 +40,7 @@ cd <nombre-del-proyecto>
 2. **Instalar dependencias**
 
 ```bash
-npm install
+bun install
 ```
 
 3. **Configurar variables de entorno**
@@ -55,7 +55,7 @@ UPSTASH_REDIS_REST_TOKEN="tu-token-de-upstash"
 4. **Iniciar el servidor de desarrollo**
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 ## 🏗️ Estructura del Proyecto
@@ -128,7 +128,7 @@ El proyecto utiliza Tailwind CSS con soporte para modo oscuro y claro. Los estil
 El proyecto está optimizado para despliegue en Vercel:
 
 ```bash
-npm run build
+bun run build
 vercel deploy
 ```
 
@@ -155,6 +155,6 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## 📧 Contacto
 
-Tu Nombre - [@tutwitter](https://twitter.com/Deus)
+Tu Nombre - [@Play10Never](https://x.com/Play10Never)
 
 Link del Proyecto: [https://github.com/Lostovayne](https://github.com/LostoVayne)
