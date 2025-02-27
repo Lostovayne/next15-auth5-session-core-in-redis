@@ -105,9 +105,31 @@ bun run dev
 
 ### Rutas de Autenticación
 
-- `/api/auth/signin`: Inicio de sesión
-- `/api/auth/signout`: Cierre de sesión
-- `/api/auth/session`: Información de la sesión actual
+Las principales rutas de autenticación del proyecto son:
+
+#### Rutas de Cliente
+
+- `/signin` - Página de inicio de sesión (`app/signin/page.tsx`)
+- `/signup` - Página de registro (`app/signup/page.tsx`)
+- `/profile` - Página de perfil del usuario (`app/profile/page.tsx`)
+- `/dashboard` - Panel de control (`app/dashboard/page.tsx`)
+- `/settings` - Configuración de cuenta (`app/settings/page.tsx`)
+
+#### Rutas de API
+
+- `/api/auth/[...nextauth]` - Endpoints de Auth.js (`app/api/auth/[...nextauth]/route.ts`)
+  - POST `/api/auth/signin` - Iniciar sesión
+  - POST `/api/auth/signup` - Registrar usuario
+  - GET `/api/auth/session` - Obtener sesión actual
+  - POST `/api/auth/signout` - Cerrar sesión
+
+#### Rutas Protegidas
+
+Todas las rutas bajo `/dashboard/*` y `/settings/*` requieren autenticación. El middleware de Auth.js (`middleware.ts`) se encarga de proteger estas rutas y redirigir a los usuarios no autenticados.
+
+#### Manejo de Estado
+
+El estado de autenticación se puede acceder desde cualquier componente usando los hooks de Auth.js
 
 ## 🎨 Personalización
 
