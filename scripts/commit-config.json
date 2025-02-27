@@ -1,0 +1,63 @@
+{
+  "commitTypes": {
+    "feat": {
+      "description": "Nuevas características",
+      "emoji": "✨",
+      "release": "minor"
+    },
+    "fix": {
+      "description": "Corrección de errores",
+      "emoji": "🐛",
+      "release": "patch"
+    },
+    "refactor": {
+      "description": "Cambios en el código que no corrigen errores ni añaden funcionalidades",
+      "emoji": "♻️",
+      "release": "patch"
+    },
+    "style": {
+      "description": "Cambios que no afectan el significado del código (espacios, formato, etc)",
+      "emoji": "💄",
+      "release": false
+    },
+    "docs": {
+      "description": "Cambios en la documentación",
+      "emoji": "📚",
+      "release": false
+    },
+    "test": {
+      "description": "Añadir o modificar tests",
+      "emoji": "🧪",
+      "release": false
+    },
+    "chore": {
+      "description": "Tareas de mantenimiento, cambios en el proceso de build, etc",
+      "emoji": "🔧",
+      "release": false
+    },
+    "perf": {
+      "description": "Mejoras de rendimiento",
+      "emoji": "⚡️",
+      "release": "patch"
+    }
+  },
+  "commitFormat": {
+    "pattern": "<type>(<scope>): <emoji> <description>",
+    "maxLength": 72,
+    "scopes": [
+      "auth",
+      "types",
+      "redis",
+      "config",
+      "ui",
+      "api",
+      "docs",
+      "deps",
+      "auto"
+    ]
+  },
+  "autoCommitInterval": 60,
+  "defaultBranch": "main",
+  "requireTests": false,
+  "requireLinting": true
+} 
